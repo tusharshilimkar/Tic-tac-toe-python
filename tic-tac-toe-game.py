@@ -3,7 +3,6 @@ print('\n\nWelcome to Tic Toe game\n'+'\n')
 print('Available positions for marking\n\n')
 board_place=['0','1','2','3','4','5','6','7','8']
 
-
 board=[' ',' ',' ',' ',' ',' ',' ',' ',' ']
  
 def display_board(board):
@@ -12,8 +11,6 @@ def display_board(board):
     print(board[6]+' | '+board[7]+' | '+board[8] + '\n----------' )
     
 display_board(board_place)
-
-
 
 def win_check(num):
     if board[0:3]==[num,num,num]:
@@ -71,8 +68,7 @@ def player_input():
                          print('Player 1 is Winner')
                          index=9
                          #result()
-                         
-                         
+                                                  
                      player1=False
                      display_board(board)                     
                     else:
@@ -80,17 +76,11 @@ def player_input():
                 else:
                      print('position exceeds')
                      player1=True
-                    
-                
+                                    
             else:
                  print('Marker invalid')
                  player_input()
-                
-            
-             
-          
-             
-             
+                                        
         while player1==False and index<=8:
             if p1mark=='X':
                 p2mark='O'
@@ -117,7 +107,5 @@ def player_input():
                 
     else:
        print('Game is Over Please Retry')
-       
-                 
                  
 player_input()
